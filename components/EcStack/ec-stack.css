@@ -1,0 +1,20 @@
+.ec-stack {
+  display: flex;
+  flex-direction: column;
+}
+
+.ec-stack-spacing--10 {
+  gap: 10px;
+}
+
+.ec-stack-spacing--20 {
+  gap: 20px;
+}
+
+.ec-stack-spacing--30 {
+  gap: 30px;
+}
+
+.ec-stack-spacing--40 {
+  gap: 40px;
+}

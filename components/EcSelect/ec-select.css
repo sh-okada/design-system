@@ -1,0 +1,32 @@
+.ec-select {
+  color: black;
+  padding: 8px;
+  font-size: 14px;
+  border: 2px solid gray;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background: white;
+}
+
+.ec-select:focus {
+  outline: none;
+  border: 2px solid black;
+}
+
+.ec-select:disabled {
+  opacity: 50%;
+}
+
+.ec-select-container--error .ec-select {
+  border: 2px solid red;
+}
+
+.ec-select-container--error .ec-select,
+.ec-select-container--error .ec-select-helper-text {
+  color: red;
+}
+
+.ec-select-container--error option {
+  color: black;
+}

@@ -1,0 +1,37 @@
+.ec-input-container {
+  width: 100%;
+}
+
+.ec-input-label {
+  font-size: 12px;
+  display: block;
+}
+
+.ec-input {
+  width: 100%;
+  font-size: 14px;
+  padding: 15px 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+  border: 2px solid gray;
+}
+
+.ec-input:disabled {
+  opacity: 50%;
+}
+
+.ec-input:focus {
+  border: 2px solid black;
+}
+
+.ec-input-container--error .ec-input {
+  border: 2px solid red;
+}
+
+.ec-input-container--error .ec-input,
+.ec-input-container--error .ec-input-label,
+.ec-input-container--error .ec-input-helper-text {
+  color: red;
+}

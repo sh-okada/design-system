@@ -1,0 +1,13 @@
+.ec-link {
+  color: blue !important;
+  font-weight: bold;
+}
+
+.ec-link:hover {
+  text-decoration: none;
+}
+
+.ec-link:focus {
+  outline: 2px solid blue;
+  outline-offset: 3px;
+}

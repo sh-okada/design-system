@@ -1,0 +1,14 @@
+services:
+  design-system:
+    container_name: design-system
+    build:
+      context: .
+      dockerfile: Dockerfile
+    tty: true
+    volumes:
+      - .:/workspace/design-system
+    ports:
+      - 3000:3000
+      - 6006:6006
+    environment:
+      TZ: Asia/Tokyo

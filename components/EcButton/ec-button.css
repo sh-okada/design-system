@@ -1,0 +1,48 @@
+.ec-button {
+  display: inline-block;
+  min-width: 100%;
+  max-width: 100%;
+  text-align: center;
+  border: none;
+}
+
+.ec-button:hover {
+  cursor: pointer;
+}
+
+.ec-button:disabled {
+  opacity: 50%;
+  cursor: default;
+}
+
+.ec-button--primary {
+  background-color: black;
+  color: white !important;
+}
+
+.ec-button--primary:focus {
+  outline: 2px solid black;
+  outline-offset: 3px;
+}
+
+.ec-button--secondary {
+  background-color: white;
+  outline: 1px solid black;
+  color: black !important;
+}
+
+.ec-button--secondary:focus {
+  outline: 2px solid black;
+}
+
+.ec-button--small {
+  padding: 5px 15px;
+}
+
+.ec-button--medium {
+  padding: 10px 15px;
+}
+
+.ec-button--large {
+  padding: 15px;
+}

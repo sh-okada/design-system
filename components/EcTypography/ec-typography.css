@@ -1,0 +1,54 @@
+.ec-typography {
+  color: black;
+  margin: 0;
+}
+
+.ec-typography--h1 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.ec-typography--h2 {
+  font-size: 24px;
+}
+
+.ec-typography--h3 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.ec-typography--h4 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.ec-typography--h5 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.ec-typography--h6 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.ec-typography--button {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.ec-typography--body1 {
+  font-size: 16px;
+}
+
+.ec-typography--body2 {
+  font-size: 14px;
+}
+
+.ec-typography--capture {
+  font-size: 12px;
+}
+
+.ec-typography--overline {
+  font-size: 10px;
+}

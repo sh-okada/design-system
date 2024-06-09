@@ -1,0 +1,29 @@
+{
+  "name": "design-system",
+  "dockerComposeFile": ["docker-compose.yaml"],
+  "service": "design-system",
+  "workspaceFolder": "/workspace/design-system",
+  "forwardPorts": [3000, 6006],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "mhutchie.git-graph",
+        "esbenp.prettier-vscode",
+        "formulahendry.auto-rename-tag",
+        "MS-CEINTL.vscode-language-pack-ja",
+        "ms-vsliveshare.vsliveshare",
+        "Orta.vscode-jest"
+      ],
+      "settings": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": [
+          "source.fixAll.eslint",
+          "source.addMissingImports"
+        ]
+      }
+    }
+  },
+  "postCreateCommand": "npm i"
+}
