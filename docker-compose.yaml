@@ -12,3 +12,5 @@ services:
       - 6006:6006
     environment:
       TZ: Asia/Tokyo
+      GITHUB_ID: Iv23lizINLA7DH6D9RtR
+      GITHUB_SECRET: e35d44ff00b99658fb53dd754d027663e7d6743b
