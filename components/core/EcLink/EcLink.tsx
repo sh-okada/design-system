@@ -8,7 +8,7 @@ type EcLinkProps = LinkProps & {
 
 const EcLink = ({ label, ...props }: EcLinkProps) => {
   return (
-    <Link className="ec-typography ec-typography--capture ec-link" {...props}>
+    <Link className="ec-typography ec-typography--body1 ec-link" {...props}>
       {label}
     </Link>
   );
