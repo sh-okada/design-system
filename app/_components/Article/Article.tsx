@@ -8,7 +8,7 @@ type ArticleProps = {
 
 const Article = ({ href, label, name }: Readonly<ArticleProps>) => {
   return (
-    <div>
+    <div className="p-4 col-span-12">
       <EcTypography intent="capture">{name}</EcTypography>
       <EcLink href={href} label={label} />
     </div>
