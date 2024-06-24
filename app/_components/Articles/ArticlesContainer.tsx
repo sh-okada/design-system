@@ -4,7 +4,7 @@ const getArticles = async (waitTime: number) => {
   await new Promise((resolve) => setTimeout(resolve, waitTime));
 
   const res = await fetch("http://localhost:3000/api/articles", {
-    cache: "no-store",
+    method: "GET",
   });
 
   const articles = await res.json();
