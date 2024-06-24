@@ -1,5 +1,10 @@
-import { EcTypography } from "@/components/core";
+import { Suspense } from "react";
+import { ArticlesContainer } from "./_components";
 
 export default async function Page() {
-  return <EcTypography>This is Top Page.</EcTypography>;
+  return (
+    <Suspense fallback={<ArticlesContainer.Skeleton />}>
+      <ArticlesContainer />
+    </Suspense>
+  );
 }
