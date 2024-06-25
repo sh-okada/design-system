@@ -1,21 +1,11 @@
+import { createCaller } from "@/server";
 import { Articles } from "./Articles";
-
-const getArticles = async (waitTime: number) => {
-  await new Promise((resolve) => setTimeout(resolve, waitTime));
-
-  const res = await fetch("http://localhost:3000/api/articles", {
-    method: "GET",
-  });
-
-  const articles = await res.json();
-
-  return articles;
-};
 
 const ArticlesContainer: React.FunctionComponent & {
   Skeleton: typeof Articles.Skeleton;
 } = async () => {
-  const articles = await getArticles(3000);
+  const caller = createCaller({});
+  const articles = await caller.articles.list();
 
   return <Articles articles={articles} />;
 };
